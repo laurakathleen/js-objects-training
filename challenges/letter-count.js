@@ -1,3 +1,20 @@
+function letterCount(string){
+    var array = string.split('');
+    var object = {};
+    for (var i=0; i<array.length; i++){
+        var letter = array[i];
+        if (object[letter]){
+            object[letter]++;
+        } else {
+            object[letter]=1;
+        }
+    } return object;
+    
+ }   
+
+ letterCount('apple');
+
+
 /*
 
   Create a function `letterCount` that accepts a string, and finds the number of times each letter
