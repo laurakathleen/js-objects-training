@@ -1,3 +1,13 @@
+var table = [{steps: 0}, null, null, null];
+var steps;
+
+function pingPong(array) {
+
+
+}
+
+
+
 /*
 
   In this challenge you will simulate the movement of a ping-pong, bouncing back and forth across a

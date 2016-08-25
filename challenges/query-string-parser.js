@@ -1,5 +1,17 @@
-/*
+function parseQueryString(string){
+    var parsedString = string.split('&');
+    var object = {};
+    parsedString.forEach(function(el){
+        var parse = el.split("=");
+        object[parse[0]] = parse[1];  
+    })
+    return object;
+}
 
+parseQueryString("a=1");
+parseQueryString("a=apple&b=beet&b=blueberry&c=&d=10");
+/*
+parseQueryString("a=apple&b=beet&b=blueberry&c=&d=10");
   Create a function `parseQueryString` that accepts a query string parameter as an argument, and
   converts it into an object, using the following rules:
 
